@@ -2,4 +2,6 @@
 
 set -e
 
-apk add curl
+apk add \
+  curl \
+  fish \

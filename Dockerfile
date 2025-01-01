@@ -4,4 +4,4 @@ COPY install.sh /tmp/install.sh
 
 RUN chmod +x /tmp/install.sh && /tmp/install.sh
 
-CMD ["sh"]
+CMD ["fish"]
