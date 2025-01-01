@@ -8,3 +8,4 @@ Alpine with the following extra features:
 
 - curl
 - fish
+- zoxide
