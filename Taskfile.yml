@@ -1,11 +1,9 @@
 version: "3"
 
 tasks:
-  default:
+  default: task setup build run
+  setup:
     - |
-      task build
-      task run
-
-  build: docker build -t tg-alpine .
-
+      ln -f ../dotfiles/starship/.config/starship.toml conf/starship.toml
+  build: docker build -t tg-alpine --progress=plain .
   run: docker run -it --rm tg-alpine
